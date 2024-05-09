@@ -25,5 +25,7 @@ Azure AKS node access box without public IPs.
 2. Paste the private key key.pem got from step "Credential"
 `vi key.pem`
 
-3. SSH to the node
+3. `chmod 400 key.pem`
+
+4. SSH to the node
 `ssh -i key.pem azureuser@<Private IP address>`
