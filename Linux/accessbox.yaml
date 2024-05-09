@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: accessbox
+spec:
+  hostUsers: false
+  containers:
+  - name: shell
+    command: ["sleep", "infinity"]
+    image: yitongfeng/accessbox:linux
